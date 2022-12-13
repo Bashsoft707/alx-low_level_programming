@@ -9,11 +9,10 @@
 
 int main(void)
 {
-	for (char low = 'a'; low <= 'z'; low++)
+	for (int i = 0; i <= 10; i++)
 	{
-		if (low != 'e' && low != 'q')
-			putchar(low);
+		printf("%d", i);
 	}
-	putchar('\n');
+	printf('\n');
 	return (0);
 }
