@@ -7,12 +7,12 @@
 
 int main(void)
 {
-	char *alpha = "Main";
+	char word[9] = "Main";
+	int i;
 
-	while (*alpha)
+	for (i = 0; i < 9; i++)
 	{
-		_putchar(*alpha);
-		alpha++;
+		_putchar(word[i]);
 	}
 	_putchar('\n');
 	return (0);
