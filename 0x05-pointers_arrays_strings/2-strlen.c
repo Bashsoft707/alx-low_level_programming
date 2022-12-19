@@ -2,15 +2,15 @@
 
 /**
  * _strlen -function that return the lenght of a string
- * @c: Character c
+ * @s: Character s
  * Return: Nothing
  */
 
-void _strlen(char *c)
+int _strlen(char *s)
 {
 	int len = 0;
 
-	while (c[len] != '\0')
+	while (s[len] != '\0')
 		len++;
 	return (len);
 }
