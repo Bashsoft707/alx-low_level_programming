@@ -23,7 +23,7 @@ void print_buffer(char *b, int size)
 		{
 			if (!(i % 2))
 				printf(" ");
-			printf("%02x:", *ptr++);
+			printf("%02x", *ptr++);
 			i++;
 			size--;
 			counter++;
@@ -37,7 +37,7 @@ void print_buffer(char *b, int size)
 		}
 		printf(" ");
 		i = 0;
-		while (size2 > 0 && i < 0)
+		while (size2 > 0 && i < 10)
 		{
 			if (*b > 31 && *b != 127)
 				printf("%c", *b);
