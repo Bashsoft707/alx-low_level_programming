@@ -8,7 +8,7 @@
  * Return: number of bytes that matched at start of string
  */
 
-char *_strspn(char *s, char *accept)
+unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int sum = 0;
 	char *ptr = accept;
