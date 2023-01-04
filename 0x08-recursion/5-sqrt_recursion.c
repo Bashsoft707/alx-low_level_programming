@@ -7,7 +7,7 @@
  * Return: sqrt of x or -1 if otherwise
  */
 
-int check_sqrt(itn x, int y)
+int check_sqrt(int x, int y)
 {
 	if (y * y > x)
 		return (-1);
