@@ -2,13 +2,13 @@
 #include <stdlib.h>
 
 /**
- * _str_concat - function that concats 2 string
+ * str_concat - function that concats 2 string
  * @s1: first string
  * @s2: second string
  * Return: Pointer to newly aloocated concatenated string
  */
 
-char *_str_concat(char *s1, char *s2)
+char *str_concat(char *s1, char *s2)
 {
 	unsigned int size1 = 0, size2 = 0;
 	char *ptr, *ret;
