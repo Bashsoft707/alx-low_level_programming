@@ -41,6 +41,6 @@ int main(int argc, char **argv)
 	}
 	if (cents == 1)
 		coins++;
-	printf("5d\n", coins);
+	printf("%d\n", coins);
 	return (0);
 }
