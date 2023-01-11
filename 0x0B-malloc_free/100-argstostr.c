@@ -34,7 +34,7 @@ char *argstostr(int ac, char **av)
 		{
 			*retptr = *ptr;
 		}
-		*retptr = '\n';
+		*retptr++ = '\n';
 	}
 
 	return (ret);
