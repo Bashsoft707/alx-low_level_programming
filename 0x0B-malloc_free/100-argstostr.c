@@ -30,7 +30,7 @@ char *argstostr(int ac, char **av)
 	retptr = ret;
 	for (i = 0; i < ac; i++)
 	{
-		for (ptr = av[i]; *ptr; ptr++; retptr++)
+		for (ptr = av[i]; *ptr; ptr++, retptr++)
 		{
 			*retptr = *ptr;
 		}
