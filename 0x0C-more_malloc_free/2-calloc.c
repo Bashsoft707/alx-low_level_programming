@@ -2,27 +2,27 @@
 #include "main.h"
 
 /**
- * calloc - allocate memory in a multiple of some size
- * @nmeb: number of memory blocks
+ * _calloc - allocate memory in a multiple of some size
+ * @nmemb: number of memory blocks
  * @size: size of blocks
- * Retuen: pointer to allocate dmemory block
+ * Return: pointer to allocate dmemory block
  */
 
-void *calloc(unsigned int nmeb, unsigned int size)
+void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	void *ret;
 	char *ptr;
 	unsigned int i;
 
-	if (nmeb == 0 || size == 0)
+	if (nmemb == 0 || size == 0)
 		return (0);
 
-	ret = malloc(nmeb * size);
+	ret = malloc(nmemb * size);
 
 	if (ret == 0)
 		return (0);
 
-	for (i = nmeb * size, ptr = ret; i; i--)
+	for (i = nmemb * size, ptr = ret; i; i--)
 		*ptr++ = 0;
 	return (ret);
 }
