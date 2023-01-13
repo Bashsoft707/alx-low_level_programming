@@ -1,5 +1,5 @@
 #include <stdlib.h>
-
+#include "main.h"
 /**
  * malloc_checked - malloc memory free and exit 98 on failure
  * @b: size to allocate
