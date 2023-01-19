@@ -9,7 +9,7 @@
  * Return index of match, otherwise -1
  */
 
-int int_index(int *array, size_t size, int (*cmp)(int))
+int int_index(int *array, int size, int (*cmp)(int))
 {
 	int i;
 
