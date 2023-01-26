@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <stdio.h>
-#include "list.h"
+#include "lists.h"
 
 /**
  * print_list - function that print a linked list
