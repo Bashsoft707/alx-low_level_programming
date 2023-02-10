@@ -3,6 +3,8 @@
 #include <fcntl.h>
 #include <sys/types.h>
 #include <sys/stat.h>
+#include <sys/uio.h>
+#include <stdlib.h>
 
 /**
  * create_file - create a file and put text in it

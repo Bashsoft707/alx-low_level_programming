@@ -1,6 +1,9 @@
 #include <unistd.h>
 #include <fcntl.h>
 #include <stdlib.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <sys/uio.h>
 
 /**
  * read_textfile - prints text form a file
