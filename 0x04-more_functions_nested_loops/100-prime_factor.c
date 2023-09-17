@@ -1,19 +1,24 @@
 #include <stdio.h>
-
 /**
- * main - Entry point
- * Return: Always 0
+ * main - entry point
+ * Return: void
  */
-
 int main(void)
 {
-	unsigned long int i = 3, n = 612852475143;
+	int c;
+	long n;
 
-	for (i = 3; i < 12057; i += 2;)
+	c = 2;
+	n = 612852475143;
+	while (n > 1)
 	{
-		while (n % i == 0 && n != i)
-			n /= i;
+		if (n % c == 0)
+		{
+			n /= c;
+		}
+		else
+			c++;
 	}
-	printf("%lu\n", n);
+	printf("%d\n", c);
 	return (0);
 }
